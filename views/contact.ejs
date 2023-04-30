@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+<div class="lg:grid grid-cols-2">
+
+    <img class="hidden lg:block object-center object-cover w-full h-full" src="images/contact.jpg" alt="contact image">
+    
+    <div class=" text-center px-20 flex flex-col gap-4">
+        <h1 class="topHeading">Let's Build A Connection</h1>
+        
+        <div class='border-4 border-violet-500 rounded-xl p-8 lg:border-none mb-14'>
+            
+            <form class="flex flex-col text-left gap-6 text-violet-900" action="/contact" method="post">
+                <label for="naam">Name</label>
+                <input class="inputField" type="text" id="naam" name="userName" placeholder="eg. Rohan">
+                <label for="emalId">Email</label>
+                <input class="inputField" id="emaiID" type="email" name="userEmail" placeholder="eg. rohan@gmail.com">
+                <label for="message">How can we help?</label>
+                <textarea class="inputField" name="userMessage" id="message" cols="30" rows="10" placeholder="Type the message....."></textarea>
+                <button class="btn" type="submit">Make Connection</button>
+            </form>
+        </div>        
+    </div>
+</div>
+<%- include("partials/footer"); -%>

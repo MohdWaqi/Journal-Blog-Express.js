@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+.mobileNav{
+    @apply block px-4 hover:bg-violet-400 text-center
+}
+.largeNav{
+    @apply hover:text-purple-400
+}
+.topHeading{
+    @apply text-4xl font-extrabold text-violet-900 font-Arima  py-20 xl:font-black xl:tracking-wider
+}
+.image{
+    @apply hidden lg:block h-96 rounded-xl shadow-xl
+}
+.inputField{
+    @apply rounded-md p-3 border-solid border-2 bg-transparent border-violet-400 focus:border-violet-800 focus:bg-violet-300 focus:outline-none
+}
+.btn{
+    @apply bg-violet-500 text-white p-3 rounded-md hover:bg-violet-400 hover:text-violet-800 active:bg-violet-600
+}
+@tailwind utilities;

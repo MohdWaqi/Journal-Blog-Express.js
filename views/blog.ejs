@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+<div class=" text-center px-20 flex flex-col gap-4">
+    <h1 class="topHeading">Welcome to Mohd Waqi Pervez's Journal</h1>
+    <div class="flex gap-5">
+
+        <div class='xl:text-left border-4 border-violet-500 rounded-xl p-8 lg:border-none'>
+            
+            <h2 class='text-xl font-semibold text-violet-600 font-Arima'>Home</h2>
+            <p class="text-gray-600">First let me introduce myself, I am Mohd Waqi Pervez from Moradabad, Uttar Pradesh, India. I have completed my graduation in 2021 and I have been coding since I was in 9th grade. I was struggling with my unhealthy habits but after my persistent efforts I had transformed my habits and that results in feeling ultra productive.</p>
+        </div>
+        <img class="image" src="images/journal-10.jpg" alt="journal-1">
+        <img class="image" src="images/journal.jpg" alt="journal-2">
+    </div>
+    <div id="content" class="text-left flex flex-col gap-6 my-10">
+            <% postList.forEach(function(post){ %>
+                <form action="/delete" method="post">
+                    <div class='bg-violet-100 rounded-2xl p-6 text-right shadow-xl'>
+                        <div class='text-left'>
+                            <h3 class="text-lg font-semibold text-violet-600 font-Arima "><%= post.title; %></h3>
+                            <p class="text-gray-600"><%= post.content.slice(0,100) + "..."; %></p>
+                        </div>
+                        <a class='text-sm font-semibold text-violet-400 hover:text-violet-600' href="posts/<%= post._id; %>">Read More</a>
+                        <button type="submit" name="delete" value="<%= post._id %>">❌</button>
+                    </div>
+                </form>
+            <% }) %>
+    </div>
+</div>
+<%- include("partials/footer"); -%>

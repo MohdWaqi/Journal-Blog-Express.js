@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+<div class=" text-center px-20 flex flex-col gap-4 pb-20 lg:px-52">
+    <h1 class="topHeading">Compose</h1>
+    <form class="flex flex-col text-left gap-5 lg:text-xl text-violet-900" action="/add" method="post">
+        <label for="heading">Title</label>
+        <input class="inputField" id="heading" type="text" name="postTitle">
+        <label for="info">Post</label>
+        <div id="info" class="text-left gap-5">
+            
+            <textarea class="inputField p-2 w-full" name="postContent" rows="10"></textarea>    
+        </div>
+        <div class="text-center">
+            <button class="btn w-full lg:w-52" type="submit">Publish</button>
+        </div>
+    </form>
+</div>
+<%- include("partials/footer"); -%>

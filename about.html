@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima&display=swap" rel="stylesheet">
+    <title>Journal Blog</title>
+</head>
+<body class=' bg-violet-200 flex flex-col h-screen justify-between'>
+    <div class="relative bg-violet-900 h-24 flex">
+        <h1 class="text-3xl w-80 text-violet-200 font-bold py-6 pl-5 tracking-widest xl:mx-24 xl:text-4xl xl:mr-52">Daily Journal</h1>
+        <div class='sm:hidden'>
+            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="z-10 mt-8 h-8 px-3 rounded-lg font-semibold text-violet-800 ml-20 bg-violet-200 hover:bg-violet-300 hover:-translate-y-1 transition " type="button">More ⧨</button>
+            <div id="dropdown" class="absolute hidden divide-y bg-violet-300 rounded-lg py-4 mt-1 w-32">
+                <ul class="space-y-1 text-violet-700">
+                    <li class='block px-4 hover:bg-violet-400 text-center'>
+                        <a href="#">Home</a><hr>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a><hr>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a><hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hidden sm:inline-flex ml-28 gap-10 place-items-center text-violet-200 tracking-wider  font-semibold lg:ml-72 lg:gap-14 xl:ml-96">
+            <a class="hover:text-purple-400" href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+        </div>
+    </div>
+
+    <div class=" text-center px-20 flex flex-col gap-4">
+        <h1 class="text-4xl font-extrabold text-violet-900 font-Arima  py-20 xl:font-black xl:tracking-wider">Our Purpose</h1>
+        <div class="flex gap-5">
+
+            <div class=' border-4 border-violet-500 rounded-xl p-8'>
+                
+                
+                <p class="text-gray-600 text-lg lg:text-2xl">we are optimistic for a future where people live healthier, more informed, more creative lives. We see the world where technology enhances human potential, and take us into a new era of intelligence and progress that everyone can benefit from.</p>
+            </div>
+        </div>
+    </div>
+    <footer class='bg-violet-700 text-sm text-center h-10 text-violet-200 font-medium py-2'>Copyright ©️  Mohd Waqi Pervez</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
